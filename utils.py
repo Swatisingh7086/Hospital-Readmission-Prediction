@@ -1,13 +1,14 @@
 import os
 import joblib
-import pandas as pd
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 MODEL_PATH = os.path.join(
     BASE_DIR,
-    "RandomForestModel.pkl"
+    "model",
+    "rf_balanced_model.joblib"
 )
+
 FEATURE_PATH = os.path.join(
     BASE_DIR,
     "model",
@@ -16,7 +17,6 @@ FEATURE_PATH = os.path.join(
 
 model = joblib.load(MODEL_PATH)
 feature_columns = joblib.load(FEATURE_PATH)
-
 
 def preprocess_input(user_data):
 
