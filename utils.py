@@ -6,10 +6,8 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 MODEL_PATH = os.path.join(
     BASE_DIR,
-    "model",
-    "rf_balanced_model.joblib"
+    "RandomForestModel.pkl"
 )
-
 FEATURE_PATH = os.path.join(
     BASE_DIR,
     "model",
