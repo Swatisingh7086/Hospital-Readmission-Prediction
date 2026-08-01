@@ -222,7 +222,7 @@ elif page == "Visualizations":
         )
 
         st.pyplot(fig)
-            elif chart == "Lab Procedures":
+    elif chart == "Lab Procedures":
 
         fig, ax = plt.subplots(figsize=(8,5))
 
@@ -475,7 +475,7 @@ elif page == "Prediction":
             summary,
             use_container_width=True
         )
-        elif page == "Model Performance":
+elif page == "Model Performance":
 
     st.title("📈 Model Performance")
 
