@@ -13,16 +13,19 @@ st.set_page_config(
     layout="wide"
 )
 
+
+import os
+import pandas as pd
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 DATA_PATH = os.path.join(
     BASE_DIR,
-    "Dataset",
+    "dataset",
     "diabetic_data.csv"
 )
 
 df = pd.read_csv(DATA_PATH)
-
 st.sidebar.title("🏥 Hospital Readmission")
 
 page = st.sidebar.radio(
